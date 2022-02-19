@@ -1,0 +1,377 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* #main {
+
+} */
+
+               /* heading */
+
+#heading {
+    /* display: none; */
+    position: relative;
+    z-index: 10;
+    background-color: #16a02d;
+    width: 100%;
+    height: 75px;
+}
+
+.logo {
+    float: left;
+    width: 70px;
+    padding: 5px 0 0 5px;
+    margin-right: 190px;
+    cursor: pointer;
+}
+
+.function {
+    text-align: center;
+}
+
+.nav > li {
+    list-style-type: none;
+    float: left;
+    line-height: 70px;
+    margin: 0 30px;
+}
+
+.nav > li > a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 550;
+    font-size: 19px;
+    font-family:sans-serif;
+    color: rgb(241, 241, 241);
+    text-decoration: none;
+    position: relative;
+}
+
+.nav > li > a:before {
+    touch-action: manipulation;
+    border-radius: 20px;
+    margin-top: 18px;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: -7px;
+    background: rgb(255, 255, 255);
+    height: 4px;
+    transition-duration: 0.3s;
+}
+
+.nav > li > a:hover:before {
+    left: 0;
+    right: 0;
+}
+
+.nav > li > a:hover {
+    transition-duration: 0.6s;
+    color: rgb(233, 159, 61);
+}
+
+.ion {
+    float: right;
+    cursor: pointer;
+    line-height: 70px;
+    margin-right: 50px;
+}
+
+.form-control {
+    padding: 7px 25px 1px 6px;
+    font-size: 13px;
+    border: #fff 2px;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(253, 253, 253, 0.795);
+}
+
+.ti-search {
+    color: #000;
+    margin: 2px 0 0 -32px;
+    font-size: 15px;
+}
+
+
+/* slider */
+
+.slider{
+    overflow: hidden;
+}
+  
+.mySlides {
+    display: none;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+  
+.mySlides-img{
+    width: 100%;
+    height: 572px;
+    object-fit: cover;
+    object-position: 15% 25%;
+    animation: zoom linear 8s;
+}
+  
+  /* Caption text */
+.text {
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(223, 223, 223);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 92px;
+    line-height: 6rem;
+    padding: 8px 12px;
+    position: absolute;
+    top: 38%;
+    width: 100%;
+    animation: text-slider-up ease-in .6s;
+    left: 40px;
+}
+  
+.text1 {
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(223, 223, 223);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 6rem;
+    padding: 8px 12px;
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    animation: text-slider-up ease-in .6s;
+    left: 40px;
+}
+.sub-text {
+    word-spacing: 7px;
+    font-style: italic;
+    font-family: system-ui;
+    color: rgb(223, 223, 223);
+    font-size: 30px;
+    font-weight: 400;
+    padding: 8px 12px;
+    position: absolute;
+    top: 75%;
+    width: 50%;
+    line-height: 1.6;
+    animation: text-slider-up ease-in .7s;
+    left: 44px;
+}
+  
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: .9s;
+    animation-name: fade;
+    animation-duration: .9s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+    
+@keyframes text-slider-up {
+    from {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* contact */
+
+.contact {
+    padding: 40px 45px;
+    animation: text-slider-up ease-in .7s;
+}
+
+.infomation {
+    float: left;
+    width: 50%;
+    padding: 0 35px;
+}
+
+.infomation > h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 3px;
+    font-weight: 550;
+    padding: 30px 0;
+    font-size: 37px;
+}
+
+.infomation > div {
+    padding: 30px 0 0 0;
+}
+
+.infomation div > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.infomation div > p > i {
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+.infomation > input {
+    border:1px solid;
+    padding: 15px 40px;
+    margin: 20px 0 0;
+    border-radius: 3px;
+}
+
+.infomation > .form-control-1{
+    margin-right: 24px;
+}
+
+.infomation > .form-control-3 {
+    padding: 15px 40px 85px; 
+    
+}
+
+.button {
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    text-decoration: none;
+    margin: -50px 0 0;
+    padding: 16px 37px;
+    background-color: #138126;
+    color: #ccc;
+    font-weight: 550;
+    word-spacing: 4px;
+    border-radius: 3px;
+}
+
+.button:hover {
+    transition-duration: 0.2s;
+    background-color: #34c24c;
+    color: #fff;
+}
+/* map */
+.maps {   
+    text-align: center;
+}
+
+.map {
+    width: 97%;
+    height: 600px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 50px;
+}
+
+/* introduce */
+
+.introduce > h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    animation: text-slider-up ease-in .7s;
+}
+
+.introduce .img {
+    margin-top: 20px;
+    text-align: center;
+    animation: text-slider-up ease-in .7s;
+}
+
+.introduce > .img > img {
+    width:100px;
+}
+
+.introduce .sub-text{
+    width: 94%;
+    height: 10%;
+    font-size: 15px;
+    color: #000;
+    font-style: italic;
+    font-weight: 700;
+    margin-top: -230px;
+}
+
+.introduce .content {
+    width: 80%;
+}
+
+.introduce .content .text-1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    animation: text-slider-up ease-in .7s;
+    padding: 0 0 0 55px;
+    font-size: 23px;
+    font-weight: 650;
+    margin-top: 120px;
+    color: red;
+}
+
+.introduce .content .text {
+    text-align: justify;
+    width: 95%;
+    font-size: 15px;
+    color: #000;
+    line-height: 1.9;
+    margin-top: 160px;
+}
+
+/* work*/
+
+.work {
+    animation: text-slider-up ease-in .7s;
+    padding: 20px 80px;
+}
+
+.work-text {
+    margin-top: 40px;
+}
+
+.work .img {
+    width: 100px;
+}
+
+.work .text-1 {
+    margin: -95px 0 0 110px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.work .text-2 {
+    margin: 5px 0 15px 110px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.work .text-3 {
+    margin: 0 0 0 110px;
+}
+
+.work > .work-text > a:hover {
+    color: red;
+    transition-duration: 0.2s;
+}

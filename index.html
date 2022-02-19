@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/lo-go.png" type="image/x-icon" />
+    <title>Trang chủ - Trường THPT Vĩnh Linh</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="main">
+        <div id="heading">
+            <img src="./assets/img/logo.png" alt="logo" class="logo">
+            <div class="function">
+                <ul class="nav">
+                    <li><a href="./index.html">Trang chủ</a></li>
+                    <li><a href="./introduce.html">Giới thiệu</a></li>
+                    <li><a href="./work.html">Hoạt động</a></li>
+                    <li><a href="./contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            
+            <div class="ion">
+                <form action="">
+                    <div class="search">
+                        <input type="search" name="" placeholder="Tìm kiếm" required id="" class="form-control">
+                        <i class="ti-search"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="row">
+                <div class=" col l-12 m-12 c-12 ">
+                    <div class="mySlides fade">
+                        <img src="./assets/img/img1.jpg" class="mySlides-img" >\
+                        <div class="text">Trường</div>
+                        <div class="text1">THPT Vĩnh Linh</div>
+                        <div class="sub-text">Hồ Xá - Vĩnh Linh - Quảng Trị</div>
+                    </div>
+    
+                </div>
+    
+                <div class="col l-12 m-12 c-12 ">
+                    <div class="mySlides fade">
+                        <img src="./assets/img/img2.jpg"  class="mySlides-img"  >
+                        <div class="text">Trường</div>
+                        <div class="text1">THPT Vĩnh Linh</div>
+                        <div class="sub-text">Hồ Xá - Vĩnh Linh - Quảng Trị</div>
+                    </div>
+                </div> 
+            </div>
+            <script src="https://uhchat.net/code.php?f=6597be"></script>
+
+            </div>  
+                <script>
+                    var slideIndex = 0;
+                    showSlides();
+            
+                    function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {slideIndex = 1}
+                    slides[slideIndex-1].style.display = "flex";
+                    setTimeout(showSlides, 5000); // Change image every 2 seconds
+                    }
+                </script>   
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
